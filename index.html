@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
 <title>Formularz</title>
 </head>
 <body>
-  <<form action="/submit" method="post">
-        <label for="name">Imię i Nazwisko:</label><br>
-        <input type="text" id="name" name="name" placeholder="Wpisz swoje imię i nazwisko" required><br><br>
-          <label for="email">Adres e-mail:</label><br>
-<input type="email" id="email" name="email" placeholder="Wpisz swój adres e-mail" reguired><br><br>
-  <label for="phone">Numer telefonu:</label><br>
-<input type="tel" id="phone" name="phone" placeholder="Wpisz swój numer telefonu" reguired><br><br>
-  
-</form>
+  <form action="/submit" method="post">
+    <label for="name">Imię i Nazwisko:</label><br>
+           <input type="text" id="name" name="name" placeholder="Wpisz swoje imię i nazwisko" required><br><br>
+    <label for="email">Adres e-mail:</label><br>
+          <input type="email" id="email" name="email" placeholder="Wpisz swój adres e-mail" reguired><br><br>
+    <label for="phone">Numer telefonu:</label><br>
+          <input type="tel" id="phone" name="phone" placeholder="Wpisz swój numer telefonu" reguired><br><br>
+    <label for="password">Hasło:</label><br>
+          <input type="password" id="password" name="password" placeholder="Wpisz hasło" reguired><br><br>
+    <label for="terms">
+          <input type="checkbox" id="terms" name="terms" required>Akceptuję <a href"#">warunki korzystania</a> </label><br><br>
+   <label>Płeć:</label><br>
+          <input type="radio" id="male" name="gender" value="male">
+   <label for="male">Mężczyzna</label><br><br>
+         <input type="radio" id="female" name="gender" value="female">
+   <label for="female">Kobieta</label><br><br>
+
+    <label for="country">Wybierz kraj:</label>
+  <select id="country" name="country">
+         <option value="poland">Polska</option>
+          <option value="germany">Niemcy</option>
+           <option value="france">Francja</option>
+            <option value="ukraine">Ukraina</option>
+             <option value="spain">Hiszpania</option>
+  </select>
+  </form>
+  <button type="submit">Wyślij</button>
+ <button type"reset">Resetuj</button>
 </body>
 </html>
